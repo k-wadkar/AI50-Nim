@@ -166,9 +166,9 @@ class NimAI():
                 return random.choice(actions)
         
         highestQVal = self.best_future_reward(state)
-
+        
         if highestQVal == 0:
-            return action[0]
+            return actions[0]
 
         for action in actions:
             if (tuple(state), action) in self.q and self.q[tuple(state), action] == self.best_future_reward(state):

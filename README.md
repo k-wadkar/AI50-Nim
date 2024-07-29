@@ -1,0 +1,1 @@
+To play against the AI, run the 'play.py' file.
